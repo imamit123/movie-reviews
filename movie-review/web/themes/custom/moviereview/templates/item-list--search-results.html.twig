@@ -1,0 +1,85 @@
+
+{#
+/**
+* @file
+* Default theme implementation for an item list.
+*
+* Available variables:
+* - items: A list of items. Each item contains:
+*   - attributes: HTML attributes to be applied to each list item.
+*   - value: The content of the list element.
+* - title: The title of the list.
+* - list_type: The tag for list element ("ul" or "ol").
+* - wrapper_attributes: HTML attributes to be applied to the list wrapper.
+* - attributes: HTML attributes to be applied to the list.
+* - empty: A message to display when there are no items. Allowed value is a
+*   string or render array.
+* - context: A list of contextual data associated with the list. May contain:
+*   - list_style: The custom list style.
+*
+* @see template_preprocess_item_list()
+*
+* @ingroup themeable
+*/
+#}
+<style type="text/css">
+	table {
+  	width:100%;
+	}
+	table, th, td {
+  	border: 1px solid black;
+  	border-collapse: collapse;
+	}
+	th, td {
+  	padding: 15px;
+  	text-align: left;
+	}
+	#search-result tr:nth-child(even) {
+  	background-color: #eee;
+	}
+	#search-result tr:nth-child(odd) {
+ 		background-color: #fff;
+	}
+	#search-result th {
+  	background-color: black;
+  	color: white;
+	}
+</style>
+{% if items or empty %}
+	{%- if items -%}
+	  <table id="search-result">
+	  	<tr>
+    		<th>Title</th>
+    		<th>Result</th>
+    		<th>Cover Image</th>
+    	</tr>
+ 	 	{%- for item in items -%}
+  		<div class="vz__item-result-wrapper">
+   			<div class="vz__search-item-value">
+   				<tr>
+   					<td>
+   						<div class="vz__search-item-title">
+   							<h3>
+   								<a href="{{ item.value['#result'].link }}">{{ item.value['#result'].title }}</a>
+   							</h3>
+   						</div>	
+   					</td>
+   					<td>
+   						<div class="vz__search-item-des">
+   							<p>{{ item.value['#result'].snippet }} 
+   								<a class = "vz-search-read-more btn_sm_bg_transparent btn_md_bg_transparent" href="{{ item.value['#result'].link }}">Read More</a> 
+   							</p>
+   						</div>
+   					</td> 
+   					<td>
+   						{{ cover_image }}
+   					</td>
+   			  </tr>
+   			</div>	
+   		</div>
+   {%- endfor -%}
+   </table>
+  {%- else -%}
+  {{- empty -}}
+  {%- endif -%}
+  {%- endif %}

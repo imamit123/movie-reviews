@@ -1,0 +1,25 @@
+name: Movie Review
+type: theme
+base theme: classy
+description: 'A custom theme for Movie Review.'
+version: VERSION
+core: 8.x
+
+libraries:
+  - moviereview/moviereview-styles
+  - moviereview/moviereview-js
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  banner: 'Banner'
+  content_top: 'Content Top'
+  content_top_mobile: 'Content Top Mobile'
+  content_main_top: 'Content Main Top'
+  sidebar_first: 'Sidebar Left'
+  content: 'Main Content'
+  sidebar_second: 'Sidebar Right'
+  content_main_bottom: 'Content Main Bottom'
+  content_main_bottom_mobile: 'Content Main Bottom Mobile'
+  content_bottom: 'Content Bottom'
+  footer: 'Footer'

@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Theme override to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+<div class="collections-coming-item align-items-center">
+{% set taxname = fields.name.content|split(' ')%}
+	<h3>{{taxname[0]}}<span>{{taxname[1]}}</span></h3>
+	<div class="modelImg">
+		<img src="{{ fields.field_car_collection_image.content }}" src-desktop="{{ fields.field_car_collection_image.content }}" src-tablet="{{ fields.field_car_collection_image.content }}" src-mobile="{{ fields.field_car_collection_image.content }}" alt="House of Classics" title="House of Classics" class="imgSrcChange" style="">
+	</div>
+  <div class="collections-small-con">
+	{% if fields.tid.content == '1' %}
+		{% set car = 'car' %}
+	{% else %}
+    {% set car = 'cars' %}
+	{% endif %}
+  	<span class="title_collection">{{ fields.tid.content }} {{ car }}</span>
+    {{ fields.description__value.content|raw }}
+    <h4>FEATURING: <span><a href="#" tabindex="0">{{ fields.field_featuring_cars.content }} <i class="arrow-brown"></i></a></span> </h4>
+  </div>
+</div>

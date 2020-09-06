@@ -1,0 +1,24 @@
+hoc-styles:
+  version: VERSION
+  css:
+    component:
+      css/bootstrap.css: { }
+      css/slick.css: { }
+      css/slick-theme.css: { }
+      css/base.css: { }
+      css/multi_step_form.css: {}
+      css/custom.css: {}
+
+hoc-js:
+  version: VERSION
+  js:
+    js/bootstrap.js: {}
+    js/main.js: {}
+    js/popper.min.js: {}
+    js/slick.min.js: {}
+    js/custom-file-input.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

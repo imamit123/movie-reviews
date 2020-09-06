@@ -1,0 +1,21 @@
+moviereview-styles:
+  version: VERSION
+  css:
+    component:
+      css/bootstrap.css: { }
+      css/base.css: { }
+      css/multi_step_form.css: {}
+      css/custom.css: {}
+
+moviereview-js:
+  version: VERSION
+  js:
+    js/bootstrap.js: {}
+    js/main.js: {}
+    js/popper.min.js: {}
+    js/custom-file-input.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

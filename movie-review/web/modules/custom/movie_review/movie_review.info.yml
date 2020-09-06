@@ -1,0 +1,6 @@
+name: Movie Review Popup Configration
+type: module
+description: Movie Review Popup Configration
+package: Custom
+version: 1.x
+core: 8.x

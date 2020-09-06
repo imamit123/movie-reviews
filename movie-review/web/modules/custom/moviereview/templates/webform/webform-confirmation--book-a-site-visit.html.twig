@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Default theme implementation to webform confirmation.
+ *
+ * Available variables:
+ * - progress: Progress bar.
+ * - message: Confirmation message.
+ * - back_url: URL to the previous webform submission.
+ *
+ * @see template_preprocess_webform_confirmation()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('webform/webform.confirmation') }}
+
+{% if progress %}
+  {{ progress }}
+{% endif %}
+<div class="personal-form text-center bg-white">
+  <div class="information-submitted">
+  		<i class="submitted"><img src="/themes/custom/houseofclassices/images/accept.svg" alt="House of Classics"></i>
+    <div{{ attributes.addClass('webform-confirmation') }}>
+
+		  {% if message %}
+		    <div class="webform-confirmation__message">{{ message }}</div>
+		  {% endif %}
+
+		  {% if back %}
+		  <div class="webform-confirmation__back">
+		    <a class="btn btn-primary btn-sm btn-rounded" href="/" rel="prev" title="Go To Home"{{ back_attributes }}>Go To Home</a>
+		  </div>
+		  {% endif %}
+
+    </div>
+  </div>
+</div>

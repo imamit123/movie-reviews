@@ -1,0 +1,637 @@
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../fonts/RobotoRegular.eot');
+  src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+       url('../fonts/RobotoRegular.woff2') format('woff2'),
+       url('../fonts/RobotoRegular.woff') format('woff'),
+       url('../fonts/RobotoRegular.ttf') format('truetype'),
+       url('../fonts/RobotoRegular.svg#RobotoRegular_1') format('svg');
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../fonts/RobotoBold.eot');
+  src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+       url('../fonts/RobotoBold.woff2') format('woff2'),
+       url('../fonts/RobotoBold.woff') format('woff'),
+       url('../fonts/RobotoBold.ttf') format('truetype'),
+       url('../fonts/RobotoBold.svg#RobotoBold_1') format('svg');
+}
+
+@font-face {
+  font-family: 'roboto_medium';
+  src: url('../fonts/roboto_medium.eot');
+  src: url('fonts/roboto_medium.eot') format('embedded-opentype'),
+       url('../fonts/roboto_medium.woff2') format('woff2'),
+       url('../fonts/roboto_medium.woff') format('woff'),
+       url('../fonts/roboto_medium.ttf') format('truetype'),
+       url('../fonts/roboto_medium.svg#roboto_medium') format('svg');
+     font-weight: 500
+}
+@font-face {
+  font-family: 'BaronNeue';
+  src: url('../fonts/BaronNeue.eot');
+  src: url('../fonts/BaronNeue.eot') format('embedded-opentype'),
+       url('../fonts/BaronNeue.woff2') format('woff2'),
+       url('../fonts/BaronNeue.woff') format('woff'),
+       url('../fonts/BaronNeue.ttf') format('truetype'),
+       url('../fonts/BaronNeue.svg#BaronNeue_1') format('svg');
+}
+
+@font-face {
+  font-family: 'BaronNeueBold';
+  src: url('../fonts/BaronNeueBold.eot');
+  src: url('../fonts/BaronNeueBold.eot') format('embedded-opentype'),
+       url('../fonts/BaronNeueBold.woff2') format('woff2'),
+       url('../fonts/BaronNeueBold.woff') format('woff'),
+       url('../fonts/BaronNeueBold.ttf') format('truetype'),
+       url('../fonts/BaronNeueBold.svg#BaronNeueBold_1') format('svg');
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../fonts/RobotoLight.eot');
+  src: url('../fonts/RobotoLight.eot') format('embedded-opentype'),
+       url('../fonts/RobotoLight.woff2') format('woff2'),
+       url('../fonts/RobotoLight.woff') format('woff'),
+       url('../fonts/RobotoLight.ttf') format('truetype'),
+       url('../fonts/RobotoLight.svg#RobotoLight_1') format('svg');
+}
+
+a:hover{color: #B89464;text-decoration: none;}
+main { min-height: 300px;padding-bottom: 50px; }
+
+/* how it work quick tabs */
+.works-wrp .item-list ul.nav-item { margin-bottom: 1rem;padding: 0; }
+.works-wrp .item-list.nav ul.nav-item li.nav-link {padding: 0 25px; margin: 0;}
+.works-wrp .item-list ul.nav-item li.nav-link:first-child {padding-left: 0;}
+.works-wrp .item-list ul.nav-item li.active a {
+  background: none;
+  color: #856847;
+  font: 700 22px/1.4 'RobotoBold';
+  position: relative;
+}
+.works-wrp .item-list ul.nav-item li a {font: 400 22px/1.4 'roboto_medium';color: #656565;}
+@media (min-width: 992px) {
+.quicktabs-main {background: #fff;padding: 25px 30px 20px;}
+}
+@media (max-width: 991px) {
+.quicktabs-main .slick-dotted.slick-slider {background: #fff;padding: 25px 31px 0px;margin-bottom: 50px !important;}
+.slick-dotted.slick-slider .slick-dots {position: relative;}
+}
+.field--name-field-know-more-link a {color: #856847;font: 400 18px/24px "RobotoBold";text-transform: uppercase;position: relative;
+  display: inline-block;
+  padding: 0 0px;
+  line-height: 50px;
+}
+.field--name-field-know-more-link a:after { content:""; background: url(../images/down-arrow.svg) no-repeat right center;
+  width: 13px;
+  margin-left: 10px;
+  height: 13px;
+  display: inline-block
+}
+.field--name-field-know-more-link a:hover {color: #856847;}
+.form-group.error {border: none !important;background: none;}
+.form-group.error input {border: solid 2px #FF0000 !important;}
+.form-group .input-error-desc {color: #FF0000;}
+
+/*form style */
+.form-actions {display: inline-block;/*position: relative;*/}
+.form-actions:after {content: "";height: 15px;position: absolute;right: 35px;top: 20px;width: 15px;text-align:center;
+  background: url(../images/btn-arrow-white.svg) no-repeat;
+}
+.upload-box input {top: 0;z-index: 7;cursor: pointer;}
+.form-group .upload-right-btn {right: 2px;z-index: 6;}
+form .form-item {margin: 0;}
+
+/* footer soical links */
+.footer-menu ul.menu {margin: 0;}
+.footerSocialMenu ul.social-media-links--platforms li{padding: 0;}
+.footerSocialMenu ul li a span {display: block;width: 40px;height: 40px;}
+.footerSocialMenu ul li a span.fa-instagram { background: url("../images/insta.svg"); }
+.footerSocialMenu ul li a span.fa-facebook { background: url("../images/facebook.svg"); }
+.footerSocialMenu ul li a span:before {display: none;}
+.footer-menu .menu li a.is-active {color: #fff;}
+
+
+.flatpickr-calendar
+.flatpickr-month .flatpickr-current-month * {
+  pointer-events: none;
+}
+.path-webform .flatpickr-calendar
+.flatpickr-month .flatpickr-current-month * {
+  pointer-events: none;
+}
+.path-member-payment .flatpickr-calendar
+.flatpickr-month .flatpickr-current-month input.numInput,
+.path-webform .flatpickr-calendar
+.flatpickr-month .flatpickr-current-month input.numInput {
+  font-weight: bold;
+  color: #000;
+}
+.path-member-payment .flatpickr-calendar, {
+   position: relative !important;
+   left: 0 !important;
+   top: 0 !important;
+   display: block !important;
+   visibility: visible !important;
+}
+.path-member-payment span.input-group-addon.glyphicon-calendar {
+  z-index: 0;
+}
+.path-member-payment input.flatpickr-input {
+  background: transparent;
+  z-index: 1;
+}
+.path-membership-signup .custom-radio-box .membership-item > span {
+  display: inline-block;
+  font: 500 24px/26px 'Roboto';
+  color: #1C1C1A;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.path-membership-signup .custom-radio-box .membership-item > span:before,
+.form-radios label.option:before {
+  content: '';
+  border: 1px solid #856847;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 27px;
+  left: 20px;
+}
+.form-radios label.option {
+  position: relative;
+}
+.path-membership-signup .custom-radio-box .membership-item > span:after,
+.path-personal-details .form-radios label.option:after{
+content: '';
+background: #856847;
+border-radius: 50%;
+width: 13px;
+height: 13px;
+border: solid 1px #856847;
+position: absolute;
+left: 28px;
+top: 35px;
+transition: all 0.2s ease 0s;
+opacity: 0;
+transform: scale(0);
+
+}
+.path-membership-signup .form-radios input.membership-Radio-BTN,
+.form-radios input.form-radio {
+  display: none;
+}
+.path-membership-signup .form-radios input.membership-Radio-BTN:checked
++ label .custom-radio-box .membership-item > span:after,
+ input.form-radio:checked + label.option:after {
+  opacity: 1;
+  transform: scale(1);
+}
+label.option {
+  cursor: pointer;
+}
+.path-membership-signup label.option {
+  pointer-events: none;
+}
+.path-membership-signup .custom-radio-box .membership-item > span {
+  pointer-events: initial !important;
+}
+fieldset#edit-member-of-any-club--wrapper legend {
+  float: left;
+  width: auto;
+
+}
+fieldset#edit-member-of-any-club--wrapper label {
+  padding-left: 60px;
+  font: 400 18px/30px 'Roboto';
+  color: #4B4B4B;
+}
+.path-personal-details fieldset#edit-member-of-any-club--wrapper .form-radios label.option:before {
+   top: -6px;
+}
+.path-personal-details fieldset#edit-member-of-any-club--wrapper .form-radios label.option:after {
+  top: 3px;
+}
+
+.form-radio legend span {
+  font: 400 18px/30px 'Roboto';
+  color: #646464;
+  font-size: 20px;
+}
+
+.path-personal-details .form-col.password-parent label {
+  position: relative;
+  top: 14px;
+}
+
+/*css for Site visit form.*/
+
+.webform-elements {
+  margin-top: 80px;
+  position: relative;
+}
+.site-visit-title {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+#edit-please-enter-your-personal-details legend .fieldset-legend,
+#edit-please-enter-your-car-details legend .fieldset-legend,
+#edit-schedule-your-visit legend .fieldset-legend {
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #856847;
+  font: 400 28px/37px 'Roboto';
+}
+
+#edit-please-enter-your-personal-details .fieldset-wrapper .row,
+#edit-please-enter-your-car-details .fieldset-wrapper .row {
+  margin-bottom: 27px;
+}
+
+.progress-step:not(:last-child)::after {
+  z-index: 0;
+}
+.form-textarea-wrapper textarea {
+  height: 130px;
+  resize: none;
+}
+
+#edit-actions-wizard-next::after {
+  background: inherit;
+}
+
+#edit-personal-detail legend,
+#edit-car-details legend {
+  background: #e5e9f0;
+  height: 50px;
+  line-height: 50px !important;
+  text-transform: uppercase;
+  font: 400 28px/37px 'Roboto';
+  padding: 0 20px;
+  margin: 0;
+}
+
+.webform-progress {
+  padding-top: 60px;
+}
+
+.path-webform .customer_login_wrp {
+  padding: 0;
+}
+
+#edit-schedule-your-visit {
+  padding: 0 53px;
+  margin-top: 60px;
+}
+
+#edit-elements #edit-personal-details {
+  padding: 0 40px;
+}
+
+.webform-actions {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.webform-actions .webform-button--next  {
+  display: inline-block;
+  width: 225px;
+  margin-bottom: 30px;
+}
+
+.webform-confirmation__back a::hover {
+  color: inherit;
+}
+
+.path-webform .webform-confirmation__back {
+  margin-top: 44px;
+}
+
+.webform-submission-book-a-site-visit-form .webform-button--previous {
+  position: absolute;
+  top: 1px;
+  position: absolute;
+  top: 12px;
+  width: 10px;
+  right: 0;
+  border: none;
+  background: url('../images/edit.svg') no-repeat;
+  color: transparent;
+}
+
+.webform-submission-book-a-site-visit-form .form-actions::after {
+  background: none;
+}
+.webform-submission-book-a-site-visit-form .webform-button--submit {
+  display: inline-block;
+  width: 225px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.webform-submission-book-a-site-visit-form .webform-button--submit {
+  background: #856847 url('../images/btn-arrow-white.svg') no-repeat 180px 20px;
+}
+
+.path-webform .flatpickr-calendar {
+  position: absolute;
+  top: 0 !important;
+  right: 50 !important;
+}
+.path-webform .calendar-field-wrapp {
+  position: relative;
+}
+
+.path-webform .flatpickr-calendar {
+  position: absolute;
+  top: 0 !important;
+  right: 50px !important;
+  left: auto !important;
+  background: #EFE9E1;
+}
+.path-webform .calendar-field-wrapp {
+  position: relative;
+}
+
+.flatpickr-calendar .flatpickr-days .dayContainer .flatpickr-day {
+  color: #000;
+  font: 400 16px/24px 'Roboto';
+  padding: 8px 5px;
+}
+.flatpickr-calendar .flatpickr-days .dayContainer .flatpickr-day:hover,
+.flatpickr-calendar .flatpickr-days .dayContainer .flatpickr-day.selected {
+  background: #856847;
+  border-color: #856847;
+  color: #fff;
+}
+.flatpickr-calendar .flatpickr-days .dayContainer .flatpickr-day.disabled {
+   color: #999;
+}
+
+.flatpickr-calendar .flatpickr-month {
+  height: 50px;
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  color: #1c1c1a;font: 500 18px/23px 'Roboto';
+}
+.flatpickr-calendar .flatpickr-current-month {font-size:inherit;top: -6px;}
+.flatpickr-calendar .flatpickr-current-month .cur-year {font: 500 18px/23px 'Roboto';}
+.flatpickr-calendar .flatpickr-month .flatpickr-next-month svg,
+.flatpickr-calendar .flatpickr-month .flatpickr-prev-month svg {
+  height: 50px;
+}
+
+.webform-progress-tracker .progress-step.is-active .progress-marker,
+.webform-progress-tracker .progress-step.is-complete .progress-marker {
+  background-color: #856847;
+  color: transparent;
+}
+
+.path-member-documents .upload-box,
+.path-car-details .upload-box {
+  position: relative;
+}
+
+.path-member-documents .form-managed-file .file--application-pdf,
+.path-car-details .form-managed-file .file--application-pdf {
+  position: absolute;
+  display: inline-block;
+  top: 17px;
+}
+
+.path-car-details .form-managed-file .file--application-pdf {
+  left: 50%;
+}
+
+.row.pass-conf {
+  position: relative;
+}
+
+.row.pass-conf .form-group .password-suggestions {
+  position: absolute;
+  top: 80px;
+  left: 51%;
+}
+
+.row.pass-conf .col-sm-6 {
+  position: initial;
+}
+
+.path-personal-details .form-item-confirm-password-pass1 {
+  float: left;
+  width: 48%;
+}
+
+.path-personal-details .form-item-confirm-password-pass2 {
+  display: inline-block;
+  width: 48%;
+  margin-left: 32px;
+}
+.path-personal-details .form-item-confirm-password-pass2 {
+  position: relative;
+}
+.path-personal-details .form-item-confirm-password-pass2 label {
+  position: absolute;
+  left: 24px;
+  top: -3px;
+}
+
+.path-member-documents .form-item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.path-personal-details .js-form-type-radio {
+  display: inline-block;
+}
+
+.path-confirmed-membership .information-submitted {
+  text-align: center;
+}
+
+.path-confirmed-membership .confirmated-membership-form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+span.input-group-text {
+  background: #fff;
+  border: none;
+}
+
+.path-car-inspection .text-center.m-5 {
+  margin-top: 61px !important;
+}
+
+.path-car-inspection .calendar,
+.path-car-insertion .calendar {
+  min-height: 332px;
+}
+
+.path-membership-signup p {
+  line-height: inherit;
+}
+.form-radios .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.path-membership-signup .form-actions:after {
+  top: 34px;
+}
+
+.path-membership-signup .customer_login_wrp {
+  padding: 30px 60px 194px;
+}
+
+.membership-type-form {
+  position: relative;
+}
+
+.path-membership-signup .text-center.m-5 {
+  position: absolute;
+  bottom: 30px;
+  left: 37%;
+}
+
+.path-membership-signup .membership-item span {
+  color: #1C1C1A;
+}
+
+.path-membership-signup body {
+  color: #1c1c1c;
+}
+
+.messages--error {
+  margin: 0 auto;
+  max-width: 83.33%;
+}
+
+.path-member-payment .messages.messages--error,
+.path-personal-details .messages.messages--error,
+.path-car-details .messages.messages--error {
+  display: none;
+}
+.path-car-details .form-col {
+  position: initial;
+}
+.path-car-details .form-group.col-sm-6  {
+  position: relative;
+}
+
+.path-car-details span.input-group-append.input-group-addon {
+  z-index: 0;
+  right: 3px;
+  top: 9px;
+}
+
+/* style of presonal detail form popup */
+
+.ui-widget.ui-widget-content {
+  border-color: #707070;
+  -webkit-box-shadow: 3px 14px 39px -15px rgba(133,104,71,1);
+  -moz-box-shadow: 3px 14px 39px -15px rgba(133,104,71,1);
+  box-shadow: 3px 14px 39px -15px rgba(133,104,71,1);
+}
+.ui-dialog.ui-widget .ui-dialog-titlebar {
+  border:none;
+  -webkit-box-shadow: 0px 11px 11px -15px rgba(112,112,112,1);
+  -moz-box-shadow: 0px 11px 11px -15px rgba(112,112,112,1);
+  box-shadow: 0px 11px 11px -15px rgba(112,112,112,1);
+}
+.ui-dialog.ui-widget .ui-dialog-titlebar span {color: #856847;}
+.ui-dialog .ui-widget-overlay {opacity: .6;}
+
+.path-member-payment span.input-group-addon.glyphicon-calendar {
+  right: 45px;
+}
+
+.path-member-payment #error-msg {
+  color: red;
+}
+
+.path-member-payment .form-item-timeslot {
+  width: 92%;
+}
+
+.path-car-details .form-item-registration-validity,
+.path-car-details .form-item-insurance-validity {
+  width: 100%;
+  z-index: 1;
+}
+
+.path-car-details input.flatpickr-input {
+  background: transparent;
+  z-index: 1;
+}
+.flatpickr-calendar {background: #efe9e1;}
+.flatpickr-calendar .flatpickr-month .flatpickr-prev-month{
+  background: url(../images/left-arrow.svg) no-repeat center;
+  font-size: 0px;
+  top: 12px;
+}
+.flatpickr-calendar .flatpickr-month .flatpickr-next-month{
+  background: url("../images/right-arrow.svg") no-repeat center;
+  font-size: 0px;top:12px;}
+
+.flatpickr-calendar .flatpickr-month .flatpickr-prev-month svg,
+.flatpickr-calendar .flatpickr-month .flatpickr-next-month svg { display: none; }
+.flatpickr-calendar .flatpickr-innerContainer .flatpickr-weekdays { font: 500 10px/50px 'roboto';
+    text-transform: uppercase; }
+.flatpickr-calendar .flatpickr-innerContainer {padding-bottom: 20px;}
+
+.path-car-inspection .flatpickr-calendar,
+.path-car-insertion .flatpickr-calendar,
+.path-member-payment .flatpickr-calendar {
+  position: relative;
+  top: 0 !important;
+  left: 30.5px !important;
+}
+
+.path-car-inspection span.input-group-append.input-group-addon,
+.path-car-insertion span.input-group-append.input-group-addon,
+.path-member-payment span.input-group-append.input-group-addon {
+  right: 5px;
+}
+
+.offer-patron-membership  .form-radios label.option {
+  padding-left: 50px;
+  display: inline-block;
+  padding-top: 3px;
+}
+.offer-patron-membership  .form-radios label.option:before {
+  top: 2px;
+  left: 0;
+}
+.offer-patron-membership  .form-type-radio {
+  margin-top: 20px;
+}
+.offer-patron-membership  .form-radios label.option:after {
+  content: '';
+    background: #856847;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    border: solid 1px #856847;
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    transition: all 0.2s ease 0s;
+    opacity: 0;
+    transform: scale(0);
+}  
+.offer-patron-membership  input.form-radio:checked + label.option:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.offer-patron-membership .personal-form.text-center {
+  margin-bottom: 45px;
+}
